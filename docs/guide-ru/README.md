@@ -1,4 +1,4 @@
-# Yii2 module template
+# Yii2 peoples finder
 Шаблон модуля на базе execut/yii2-crud-fields
 
 Как начать

@@ -16,6 +16,6 @@ execut\moduleTemplate releases
 
 0.1.0
 ---
-- Added module template
+- Added peoples finder
 - Added changelog
 - Added readme templates

@@ -1,4 +1,4 @@
-# Yii2 module template
+# Yii2 peoples finder
 Template for yii2 module based on yii2-crud-fields
 
 How to start

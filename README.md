@@ -1,5 +1,5 @@
-# Yii2 module template
-Template for yii2 module based on yii2-crud-fields
+# Yii2 peoples finder
+Library for search peoples via social networks
 
 For license information check the [LICENSE-file](https://github.com/execut/yii2-module-template/blob/master/LICENSE.md).
 
