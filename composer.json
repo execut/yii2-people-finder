@@ -1,0 +1,46 @@
+{
+  "name": "execut/yii2-module-template",
+  "description": "A template for module based on eXeCUT Yii2 CRUD",
+  "keywords": ["yii2 crud", "yii2 module template"],
+  "homepage": "https://github.com/execut/yii2-module-template",
+  "type": "yii2-extension",
+  "license": "Apache-2.0",
+  "support": {
+    "issues": "https://github.com/execut/yii2-module-template/issues?state=open",
+    "wiki": "https://github.com/execut/yii2-module-template/wiki",
+    "source": "https://github.com/execut/yii2-module-template"
+  },
+  "authors": [
+    {
+      "name": "Mamaev Yuriy (eXeCUT)"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": "^7.4",
+    "yiisoft/yii2": "@dev"
+  },
+  "require-dev": {
+    "codeception/codeception": "^4.0",
+    "codeception/module-asserts": "^1.0",
+    "codeception/module-yii2": "^1.0",
+    "codeception/module-filesystem": "^1.0",
+    "codeception/verify": "~0.5.0 || ~1.1.0"
+  },
+  "config": {
+    "fxp-asset": {
+      "enabled": false
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "execut\\moduleTemplate\\": "src"
+    }
+  }
+}
