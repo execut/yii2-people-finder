@@ -10,6 +10,10 @@ use execut\peoplesFinder\odnoklassniki\friendsClient\Adapter;
 
 class AdapterTest extends Unit
 {
+    /**
+     * @group remote
+     * @throws \GuzzleHttp\Exception\GuzzleException
+     */
     public function testGetFriendsHtml() {
         $adapter = new Adapter(false);
         $html = $adapter->getFriendsHtml(523759147915, 2, 0);

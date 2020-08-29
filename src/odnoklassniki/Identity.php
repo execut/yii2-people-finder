@@ -13,22 +13,12 @@ use yii\base\Exception;
 
 class Identity
 {
-    protected string $authcode;
-    protected string $jSession;
+    protected ?string $authcode;
+    protected ?string $jSession;
 
     public function __construct(string $authcode = null, string $jSession = null) {
-        if ($authcode === null) {
-            if (!($authcode = getenv('ODNOKLASSNIKI_AUTHCODE'))) {
-                throw new Exception('Define ODNOKLASSNIKI_AUTHCODE constant');
-            }
-        }
 
         $this->authcode = $authcode;
-        if ($jSession === null) {
-            if (!($jSession = getenv('ODNOKLASSNIKI_JSESSION'))) {
-                throw new Exception('Define ODNOKLASSNIKI_JSESSION constant');
-            }
-        }
 
         $this->jSession = $jSession;
     }
@@ -38,6 +28,12 @@ class Identity
      */
     public function getAuthcode(): string
     {
+        if ($this->authcode === null) {
+            if (!($this->authcode = getenv('ODNOKLASSNIKI_AUTHCODE'))) {
+                throw new Exception('Define ODNOKLASSNIKI_AUTHCODE constant');
+            }
+        }
+
         return $this->authcode;
     }
 
@@ -46,6 +42,12 @@ class Identity
      */
     public function getJSession(): string
     {
+        if ($this->jSession === null) {
+            if (!($this->jSession = getenv('ODNOKLASSNIKI_JSESSION'))) {
+                throw new Exception('Define ODNOKLASSNIKI_JSESSION constant');
+            }
+       }
+
         return $this->jSession;
     }
 }

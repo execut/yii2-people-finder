@@ -10,6 +10,10 @@ use execut\peoplesFinder\odnoklassniki\searchClient\Adapter;
 
 class AdapterTest extends Unit
 {
+    /**
+     * @group remote
+     * @throws \GuzzleHttp\Exception\GuzzleException
+     */
     public function testGetValues() {
         $adapter = new Adapter(false);
         $values = $adapter->getValues(0, 'Test User', 20);
