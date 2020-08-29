@@ -12,12 +12,6 @@ use execut\peoplesFinder\odnoklassniki\People;
 
 class FriendsClientTest extends Unit
 {
-    public function testGetFriendsReal() {
-        $client = new FriendsClient();
-        $friends = $client->getFriends('579385266820');
-        $this->assertCount(153, $friends);
-    }
-
     public function testGetFriendsStubbed() {
         $adapter = $this->getMockBuilder(Adapter::class)->getMock();
         $adapter->expects($this->at(0))
