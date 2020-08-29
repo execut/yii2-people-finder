@@ -1,6 +1,6 @@
 {
   "name": "execut/yii2-peoples-finder",
-  "description": "A template for module based on eXeCUT Yii2 CRUD",
+  "description": "Extension for search peoples via social networks. Now supported only ok.ru",
   "keywords": ["yii2 crud", "yii2 peoples finder"],
   "homepage": "https://github.com/execut/yii2-peoples-finder",
   "type": "yii2-extension",
@@ -18,7 +18,10 @@
   "minimum-stability": "stable",
   "require": {
     "php": "^7.4",
-    "yiisoft/yii2": "@dev"
+    "yiisoft/yii2": "@dev",
+    "guzzlehttp/guzzle": "^7.0",
+    "modularsoftware/php-gedcom": "^1.1",
+    "ext-dom": "*"
   },
   "require-dev": {
     "codeception/codeception": "^4.0",
@@ -38,6 +41,9 @@
       "url": "https://asset-packagist.org"
     }
   ],
+  "extra": {
+    "bootstrap": "execut\\peoplesFinder\\bootstrap\\Auto"
+  },
   "autoload": {
     "psr-4": {
       "execut\\peoplesFinder\\": "src"

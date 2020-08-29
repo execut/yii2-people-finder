@@ -1,15 +1,11 @@
 # Yii2 peoples finder
-Library for search peoples via social networks
+Library for search peoples via social networks. Now supported only ok.ru.
 
-For license information check the [LICENSE-file](https://github.com/execut/yii2-module-template/blob/master/LICENSE.md).
+For license information check the [LICENSE-file](https://github.com/execut/yii2-peoples-finder/blob/master/LICENSE.md).
 
-English documentation is at [docs/guide/README.md](https://github.com/execut/yii2-module-template/blob/master/docs/guide/README.md).
-
-Русская документация здесь [docs/guide-ru/README.md](https://github.com/execut/yii2-module-template/blob/master/docs/guide-ru/README.md).
-
-[![Latest Stable Version](https://poser.pugx.org/execut/yii2-module-template/v/stable.png)](https://packagist.org/packages/execut/yii2-module-template)
-[![Total Downloads](https://poser.pugx.org/execut/yii2-module-template/downloads.png)](https://packagist.org/packages/execut/yii2-module-template)
-[![Build Status](https://travis-ci.com/execut/yii2-module-template.svg?branch=master)](https://travis-ci.com/execut/yii2-module-template)
+[![Latest Stable Version](https://poser.pugx.org/execut/yii2-peoples-finder/v/stable.png)](https://packagist.org/packages/execut/yii2-peoples-finder)
+[![Total Downloads](https://poser.pugx.org/execut/yii2-peoples-finder/downloads.png)](https://packagist.org/packages/execut/yii2-peoples-finder)
+[![Build Status](https://travis-ci.com/execut/yii2-peoples-finder.svg?branch=master)](https://travis-ci.com/execut/yii2-peoples-finder)
 
 
 Installation
@@ -20,20 +16,33 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require execut/yii2-module-template
+php composer.phar require execut/yii2-peoples-finder
 ```
 
 or add
 
 ```
-"execut/yii2-module-template": "dev-master"
+"execut/yii2-peoples-finder": "dev-master"
 ```
 
 to the require section of your `composer.json` file.
 
+Define your console environment variables from your browser social networks cookies.
+For ok.ru:
+```bash
+ODNOKLASSNIKI_AUTHCODE=AUTHCODE cookie
+ODNOKLASSNIKI_JSESSION=JSESSIONID cookie
+```
+
 Usage
 ----
 
-For more details please refer to the documentation [docs/guide/README.md](https://github.com/execut/yii2-module-template/blob/master/docs/guide/README.md).
+Run console command and get report:
+```bash
+./yii peoplesFinder "people name" "GEDCOM file path"
+```
+Where:
+people name - Finded people full name in format like "Anna Sergeevna Efremova (Pushkina)" (Pushkina - maiden name) or "Anna Efremova" or "Anna Sergeevna Efremova".
+GEDCOM file path - path to family tree file to find a person by his family in friends.
 
-Для более подробной информации обращайтесь к документации [docs/guide-ru/README.md](https://github.com/execut/yii2-module-template/blob/master/docs/guide-ru/README.md).
+See [GEDCOM standard](https://en.wikipedia.org/wiki/GEDCOM) for more information.

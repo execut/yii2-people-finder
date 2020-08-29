@@ -1,5 +1,5 @@
 <?php
-namespace execut\moduleTemplate;
+namespace execut\peoplesFinder;
 
 /**
  * Inherited Methods

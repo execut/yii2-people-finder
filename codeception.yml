@@ -1,4 +1,4 @@
-namespace: execut\moduleTemplate
+namespace: execut\peoplesFinder
 bootstrap: _bootstrap.php
 paths:
     tests: tests
