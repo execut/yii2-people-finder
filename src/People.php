@@ -13,15 +13,17 @@ class People extends PeopleAbstract
     protected ?Info $info;
     protected ?int $age;
     protected $id = null;
+    protected ?string $location;
     /**
      * @var PeopleInterface[]
      */
     protected array $friends;
-    public function __construct(string $name, array $friends = [], int $age = null, $id = null) {
+    public function __construct(string $name, array $friends = [], int $age = null, $id = null, $location = null) {
         $this->name = $name;
         $this->age = $age;
         $this->friends = $friends;
         $this->id = $id;
+        $this->location = $location;
     }
 
     public function getId()
@@ -39,5 +41,10 @@ class People extends PeopleAbstract
 
     public function getName() {
         return $this->name;
+    }
+
+    public function getLocation(): ?string
+    {
+        return $this->location;
     }
 }

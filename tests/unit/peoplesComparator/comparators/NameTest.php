@@ -16,7 +16,7 @@ class NameTest extends Unit
         $comparator = new Name();
         $peopleOne = new People('test');
         $peopleTwo = new People('test');
-        $this->assertEquals(100, $comparator->compare($peopleOne, $peopleTwo));
+        $this->assertEquals(100, $comparator->compare($peopleOne, $peopleTwo)->getQuality());
     }
 
     public function testCompareNotEqual()
@@ -24,6 +24,39 @@ class NameTest extends Unit
         $comparator = new Name();
         $peopleOne = new People('test');
         $peopleTwo = new People('test2');
-        $this->assertEquals(0, $comparator->compare($peopleOne, $peopleTwo));
+        $this->assertEquals(0, $comparator->compare($peopleOne, $peopleTwo)->getQuality());
+    }
+
+    public function testCompareEqualWithFamily()
+    {
+        $comparator = new Name();
+        $peopleOne = new People('Test Name');
+        $peopleTwo = new People('Test Name');
+        $this->assertEquals(100, $comparator->compare($peopleOne, $peopleTwo)->getQuality());
+        $peopleOne = new People('Test Name');
+        $peopleTwo = new People('Test Other');
+        $this->assertEquals(0, $comparator->compare($peopleOne, $peopleTwo)->getQuality());
+        $peopleOne = new People('Other Name');
+        $peopleTwo = new People('Test Name');
+        $this->assertEquals(0, $comparator->compare($peopleOne, $peopleTwo)->getQuality());
+        $peopleOne = new People('Name');
+        $peopleTwo = new People('Test Name');
+        $this->assertEquals(0, $comparator->compare($peopleOne, $peopleTwo)->getQuality());
+    }
+
+    public function testCompareEqualWithSecondname()
+    {
+        $comparator = new Name();
+        $peopleOne = new People('Test Second Name');
+        $peopleTwo = new People('Test Name');
+        $this->assertEquals(100, $comparator->compare($peopleOne, $peopleTwo)->getQuality());
+        $comparator = new Name();
+        $peopleOne = new People('Test Name');
+        $peopleTwo = new People('Test Second Name');
+        $this->assertEquals(100, $comparator->compare($peopleOne, $peopleTwo)->getQuality());
+//        $comparator = new Name();
+//        $peopleOne = new People('Test Third Name');
+//        $peopleTwo = new People('Test Second Name');
+//        $this->assertEquals(0, $comparator->compare($peopleOne, $peopleTwo)->getQuality());
     }
 }

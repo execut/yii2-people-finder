@@ -14,4 +14,5 @@ interface PeopleInterface
     public function getSurname();
     public function isEqual(self $people):bool;
     public function getAge():?int;
+    public function getLocation():?string;
 }

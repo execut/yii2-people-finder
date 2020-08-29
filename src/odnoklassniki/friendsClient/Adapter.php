@@ -18,6 +18,7 @@ class Adapter
 {
     protected $cache = null;
     protected Identity $identity;
+    protected $lastRequestTime = null;
     public function __construct($cache = null) {
         if ($cache === null) {
             $cache = \yii::$app->cache;
@@ -31,15 +32,12 @@ class Adapter
      * @return mixed
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
-    public function getFriendsHtml($userId, $pageNbr, $sleepSeconds = 5): string
+    public function getFriendsHtml($userId, $pageNbr, $sleepSeconds = 0.5): string
     {
         $cache = $this->cache;
         $cacheKey = __CLASS__ . $userId . ' -   ' . $pageNbr;
         if (!$cache || $cache && ($string = $cache->get($cacheKey)) === false) {
-            if ($sleepSeconds > 0) {
-                sleep($sleepSeconds);
-            }
-
+            usleep($sleepSeconds * 1000000);
             $client = $this->getGuzzleClient();
             $uri = new Uri('https://ok.ru/dk?st.cmd=friendFriend&st.friendId=' . $userId . '&cmd=FriendsPageMRB');
             $form = [

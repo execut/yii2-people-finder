@@ -27,10 +27,7 @@ class PeoplesComparator
         $results = [];
         foreach ($this->peoples as $people) {
             $result = $this->comparator->compare($people, $this->findedPeople);
-            if ($result > 0) {
-                $result = new Result($people, $result);
-                $results[] = $result;
-            }
+            $results[] = $result;
         }
 
         return $results;

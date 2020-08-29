@@ -37,12 +37,16 @@ class Report
 
         for ($key = 0; $key < $totalCount && $key < 2000; $key++) {
             echo 'Parse ' . $key . ' of ' . $totalCount . "\n";
-            try {
+//            try {
                 $people = $result->getPeople();
-            } catch (\Exception $e) {
-                break;
-            }
+//            } catch (\Exception $e) {
+//                break;
+//            }
             if (!$people) {
+                $result->getPeople();
+                if ($totalCount != ($key +1)) {
+                    throw new Exception('Too early ended people');
+                }
                 break;
             }
 
@@ -73,8 +77,14 @@ class Report
                 return $a->getQuality() < $b->getQuality();
             });
             foreach ($results as $result) {
-                $id = $result->getPeople()->getId();
-                echo $result->getQuality() . ';' . $result->getPeople()->getName() . ';' . $id . ';https://ok.ru/profile/' . $id . "\n";
+                $resultPeople = $result->getPeople();
+                $id = $resultPeople->getId();
+                $info = '';
+                if ($renderer = $result->getRenderer()) {
+                    $info .= ';' . $renderer->render();
+                }
+
+                echo $result->getQuality() . ';' . $resultPeople->getName() . ';' . $resultPeople->getLocation() . ';' . $id . ';https://ok.ru/profile/' . $id . $info . "\n";
             }
         }
     }

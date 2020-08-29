@@ -47,7 +47,7 @@ class Adapter
     public function getValues(int $firstIndex, string $query, int $pageSize)
     {
         $cache = $this->cache;
-        $cacheKey = __CLASS__ . '-' . $firstIndex . '-' . $query;
+        $cacheKey = __CLASS__ . '-' . $firstIndex . '- ' . $query;
         if (!$cache || $cache && ($value = $cache->get($cacheKey)) === false) {
             $client = $this->getGuzzleClient();
             $uri = new Uri('https://ok.ru/web-api/v2/search/portal');

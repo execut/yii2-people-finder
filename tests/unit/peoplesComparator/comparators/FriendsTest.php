@@ -24,7 +24,10 @@ class FriendsTest extends Unit
             new People('Second Friend'),
         ]);
         $result = $comparator->compare($peopleOne, $peopleTwo);
-        $this->assertEquals(2, $result);
+        $this->assertEquals(2, $result->getQuality());
+        $renderer = $result->getRenderer();
+        $this->assertInstanceOf(\execut\peoplesFinder\peoplesComparator\result\renderer\Friends::class, $renderer);
+        $this->assertCount(2, $renderer->getEqualFriends());
     }
 
     public function testCompareWithoutFriends() {
@@ -33,6 +36,6 @@ class FriendsTest extends Unit
         $peopleOne = new People('test', []);
         $peopleTwo = new People('test', []);
         $result = $comparator->compare($peopleOne, $peopleTwo);
-        $this->assertEquals(0.0, $result);
+        $this->assertEquals(0.0, $result->getQuality());
     }
 }

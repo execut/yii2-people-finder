@@ -1,0 +1,783 @@
+{
+  "id": "3",
+  "success": true,
+  "result": {
+    "mode": "Users",
+    "modesWithResults": [
+      "Users",
+      "Groups",
+      "Music",
+      "Movie"
+    ],
+    "users": {
+      "values": {
+        "inconsistency": false,
+        "chunkProperties": {
+          "count": 20,
+          "firstIndex": 20,
+          "offset": 0
+        },
+        "totalCount": 143,
+        "recognizedTotalCount": true,
+        "results": [
+          {
+            "user": {
+              "href": "/profile/589388561971?st.cmd=friendMain&amp;st.friendId=589388561971",
+              "messageHref": "/messages/589388561971?cmd=ConversationWrapper&amp;st.convId=PRIVATE_589388561971&amp;st.msgLIR=off&amp;st.cmd=userMain",
+              "info": {
+                "href": "/profile/589388561971?st.cmd=friendMain&amp;st.friendId=589388561971",
+                "shortLink": "/profile/589388561971",
+                "uid": "589388561971",
+                "name": "Test User",
+                "firstName": "Test",
+                "lastName": "User",
+                "gender": "FEMALE",
+                "age": 30,
+                "isVip": false,
+                "isStar": false,
+                "isBirthdayCakeToday": false,
+                "newbie": false
+              },
+              "location": "Беларусь",
+              "userStatus": "OFFLINE",
+              "isSubscribed": false,
+              "isSubscriptionAllowed": false
+            },
+            "shortcutMenuHref": "/dk?cmd=ShortcutMenu&amp;sc=USER_CARD&amp;t=UserMenu&amp;sl=GLOBAL_SEARCH_USERS&amp;id=589388561971&amp;sp=20&amp;sq=Test+User+&amp;sr=on",
+            "scope": "PORTAL",
+            "type": "User",
+            "stat": {
+              "entity": "USER",
+              "entityId": "589388561971",
+              "location": "GLOBAL_SEARCH_USERS",
+              "card": "USER_CARD",
+              "query": "Test User ",
+              "position": 20,
+              "item": "REGULAR",
+              "scope": "PORTAL"
+            }
+          },
+          {
+            "user": {
+              "href": "/profile/564742338667?st.cmd=friendMain&amp;st.friendId=564742338667",
+              "messageHref": "/messages/564742338667?cmd=ConversationWrapper&amp;st.convId=PRIVATE_564742338667&amp;st.msgLIR=off&amp;st.cmd=userMain",
+              "info": {
+                "href": "/profile/564742338667?st.cmd=friendMain&amp;st.friendId=564742338667",
+                "shortLink": "/profile/564742338667",
+                "uid": "564742338667",
+                "name": "test user",
+                "firstName": "test",
+                "lastName": "user",
+                "gender": "FEMALE",
+                "age": 33,
+                "isVip": false,
+                "isStar": false,
+                "isBirthdayCakeToday": false,
+                "newbie": false
+              },
+              "location": "Бухарест, Румыния",
+              "userStatus": "OFFLINE",
+              "isSubscribed": false,
+              "isSubscriptionAllowed": false
+            },
+            "shortcutMenuHref": "/dk?cmd=ShortcutMenu&amp;sc=USER_CARD&amp;t=UserMenu&amp;sl=GLOBAL_SEARCH_USERS&amp;id=564742338667&amp;sp=21&amp;sq=Test+User+&amp;sr=on",
+            "scope": "PORTAL",
+            "type": "User",
+            "stat": {
+              "entity": "USER",
+              "entityId": "564742338667",
+              "location": "GLOBAL_SEARCH_USERS",
+              "card": "USER_CARD",
+              "query": "Test User ",
+              "position": 21,
+              "item": "REGULAR",
+              "scope": "PORTAL"
+            }
+          },
+          {
+            "user": {
+              "href": "/profile/571169834969?st.cmd=friendMain&amp;st.friendId=571169834969",
+              "messageHref": "/messages/571169834969?cmd=ConversationWrapper&amp;st.convId=PRIVATE_571169834969&amp;st.msgLIR=off&amp;st.cmd=userMain",
+              "info": {
+                "href": "/profile/571169834969?st.cmd=friendMain&amp;st.friendId=571169834969",
+                "shortLink": "/profile/571169834969",
+                "uid": "571169834969",
+                "name": "test user",
+                "firstName": "test",
+                "lastName": "user",
+                "gender": "MALE",
+                "age": 33,
+                "isVip": false,
+                "isStar": false,
+                "isBirthdayCakeToday": false,
+                "newbie": false
+              },
+              "location": "г. Орел, Россия",
+              "userStatus": "OFFLINE",
+              "isSubscribed": false,
+              "isSubscriptionAllowed": false
+            },
+            "shortcutMenuHref": "/dk?cmd=ShortcutMenu&amp;sc=USER_CARD&amp;t=UserMenu&amp;sl=GLOBAL_SEARCH_USERS&amp;id=571169834969&amp;sp=22&amp;sq=Test+User+&amp;sr=on",
+            "scope": "PORTAL",
+            "type": "User",
+            "stat": {
+              "entity": "USER",
+              "entityId": "571169834969",
+              "location": "GLOBAL_SEARCH_USERS",
+              "card": "USER_CARD",
+              "query": "Test User ",
+              "position": 22,
+              "item": "REGULAR",
+              "scope": "PORTAL"
+            }
+          },
+          {
+            "user": {
+              "href": "/profile/595672213523?st.cmd=friendMain&amp;st.friendId=595672213523",
+              "messageHref": "/messages/595672213523?cmd=ConversationWrapper&amp;st.convId=PRIVATE_595672213523&amp;st.msgLIR=off&amp;st.cmd=userMain",
+              "info": {
+                "href": "/profile/595672213523?st.cmd=friendMain&amp;st.friendId=595672213523",
+                "shortLink": "/profile/595672213523",
+                "uid": "595672213523",
+                "name": "Test User",
+                "firstName": "Test",
+                "lastName": "User",
+                "gender": "FEMALE",
+                "age": 33,
+                "isVip": false,
+                "isStar": false,
+                "isBirthdayCakeToday": false,
+                "newbie": false
+              },
+              "location": "Украина",
+              "userStatus": "OFFLINE",
+              "isSubscribed": false,
+              "isSubscriptionAllowed": false
+            },
+            "shortcutMenuHref": "/dk?cmd=ShortcutMenu&amp;sc=USER_CARD&amp;t=UserMenu&amp;sl=GLOBAL_SEARCH_USERS&amp;id=595672213523&amp;sp=23&amp;sq=Test+User+&amp;sr=on",
+            "scope": "PORTAL",
+            "type": "User",
+            "stat": {
+              "entity": "USER",
+              "entityId": "595672213523",
+              "location": "GLOBAL_SEARCH_USERS",
+              "card": "USER_CARD",
+              "query": "Test User ",
+              "position": 23,
+              "item": "REGULAR",
+              "scope": "PORTAL"
+            }
+          },
+          {
+            "user": {
+              "href": "/profile/578144187110?st.cmd=friendMain&amp;st.friendId=578144187110",
+              "messageHref": "/messages/578144187110?cmd=ConversationWrapper&amp;st.convId=PRIVATE_578144187110&amp;st.msgLIR=off&amp;st.cmd=userMain",
+              "info": {
+                "href": "/profile/578144187110?st.cmd=friendMain&amp;st.friendId=578144187110",
+                "shortLink": "/profile/578144187110",
+                "uid": "578144187110",
+                "name": "Test User",
+                "firstName": "Test",
+                "lastName": "User",
+                "gender": "FEMALE",
+                "age": 33,
+                "isVip": false,
+                "isStar": false,
+                "isBirthdayCakeToday": false,
+                "newbie": false
+              },
+              "location": "Москва, Россия",
+              "userStatus": "OFFLINE",
+              "isSubscribed": false,
+              "isSubscriptionAllowed": false
+            },
+            "shortcutMenuHref": "/dk?cmd=ShortcutMenu&amp;sc=USER_CARD&amp;t=UserMenu&amp;sl=GLOBAL_SEARCH_USERS&amp;id=578144187110&amp;sp=24&amp;sq=Test+User+&amp;sr=on",
+            "scope": "PORTAL",
+            "type": "User",
+            "stat": {
+              "entity": "USER",
+              "entityId": "578144187110",
+              "location": "GLOBAL_SEARCH_USERS",
+              "card": "USER_CARD",
+              "query": "Test User ",
+              "position": 24,
+              "item": "REGULAR",
+              "scope": "PORTAL"
+            }
+          },
+          {
+            "user": {
+              "href": "/profile/114112237016?st.cmd=friendMain&amp;st.friendId=114112237016",
+              "messageHref": "/messages/114112237016?cmd=ConversationWrapper&amp;st.convId=PRIVATE_114112237016&amp;st.msgLIR=off&amp;st.cmd=userMain",
+              "info": {
+                "href": "/profile/114112237016?st.cmd=friendMain&amp;st.friendId=114112237016",
+                "shortLink": "/profile/114112237016",
+                "uid": "114112237016",
+                "name": "Test User",
+                "firstName": "Test",
+                "lastName": "User",
+                "gender": "MALE",
+                "age": 32,
+                "isVip": false,
+                "isStar": false,
+                "isBirthdayCakeToday": false,
+                "newbie": false
+              },
+              "location": "Омск, Россия",
+              "userStatus": "OFFLINE",
+              "isSubscribed": false,
+              "isSubscriptionAllowed": false
+            },
+            "shortcutMenuHref": "/dk?cmd=ShortcutMenu&amp;sc=USER_CARD&amp;t=UserMenu&amp;sl=GLOBAL_SEARCH_USERS&amp;id=114112237016&amp;sp=25&amp;sq=Test+User+&amp;sr=on",
+            "scope": "PORTAL",
+            "type": "User",
+            "stat": {
+              "entity": "USER",
+              "entityId": "114112237016",
+              "location": "GLOBAL_SEARCH_USERS",
+              "card": "USER_CARD",
+              "query": "Test User ",
+              "position": 25,
+              "item": "REGULAR",
+              "scope": "PORTAL"
+            }
+          },
+          {
+            "user": {
+              "href": "/profile/582076301880?st.cmd=friendMain&amp;st.friendId=582076301880",
+              "messageHref": "/messages/582076301880?cmd=ConversationWrapper&amp;st.convId=PRIVATE_582076301880&amp;st.msgLIR=off&amp;st.cmd=userMain",
+              "info": {
+                "href": "/profile/582076301880?st.cmd=friendMain&amp;st.friendId=582076301880",
+                "shortLink": "/profile/582076301880",
+                "uid": "582076301880",
+                "name": "Test User",
+                "firstName": "Test",
+                "lastName": "User",
+                "gender": "MALE",
+                "age": 30,
+                "isVip": false,
+                "isStar": false,
+                "isBirthdayCakeToday": false,
+                "newbie": false
+              },
+              "location": "Минск, Беларусь",
+              "userStatus": "OFFLINE",
+              "isSubscribed": false,
+              "isSubscriptionAllowed": false
+            },
+            "shortcutMenuHref": "/dk?cmd=ShortcutMenu&amp;sc=USER_CARD&amp;t=UserMenu&amp;sl=GLOBAL_SEARCH_USERS&amp;id=582076301880&amp;sp=26&amp;sq=Test+User+&amp;sr=on",
+            "scope": "PORTAL",
+            "type": "User",
+            "stat": {
+              "entity": "USER",
+              "entityId": "582076301880",
+              "location": "GLOBAL_SEARCH_USERS",
+              "card": "USER_CARD",
+              "query": "Test User ",
+              "position": 26,
+              "item": "REGULAR",
+              "scope": "PORTAL"
+            }
+          },
+          {
+            "user": {
+              "href": "/profile/560865112550?st.cmd=friendMain&amp;st.friendId=560865112550",
+              "messageHref": "/messages/560865112550?cmd=ConversationWrapper&amp;st.convId=PRIVATE_560865112550&amp;st.msgLIR=off&amp;st.cmd=userMain",
+              "info": {
+                "href": "/profile/560865112550?st.cmd=friendMain&amp;st.friendId=560865112550",
+                "shortLink": "/profile/560865112550",
+                "uid": "560865112550",
+                "name": "Test User",
+                "firstName": "Test",
+                "lastName": "User",
+                "gender": "MALE",
+                "age": 31,
+                "isVip": false,
+                "isStar": false,
+                "isBirthdayCakeToday": false,
+                "newbie": false
+              },
+              "location": "Минск, Беларусь",
+              "userStatus": "OFFLINE",
+              "isSubscribed": false,
+              "isSubscriptionAllowed": false
+            },
+            "shortcutMenuHref": "/dk?cmd=ShortcutMenu&amp;sc=USER_CARD&amp;t=UserMenu&amp;sl=GLOBAL_SEARCH_USERS&amp;id=560865112550&amp;sp=27&amp;sq=Test+User+&amp;sr=on",
+            "scope": "PORTAL",
+            "type": "User",
+            "stat": {
+              "entity": "USER",
+              "entityId": "560865112550",
+              "location": "GLOBAL_SEARCH_USERS",
+              "card": "USER_CARD",
+              "query": "Test User ",
+              "position": 27,
+              "item": "REGULAR",
+              "scope": "PORTAL"
+            }
+          },
+          {
+            "user": {
+              "href": "/profile/576730534756?st.cmd=friendMain&amp;st.friendId=576730534756",
+              "messageHref": "/messages/576730534756?cmd=ConversationWrapper&amp;st.convId=PRIVATE_576730534756&amp;st.msgLIR=off&amp;st.cmd=userMain",
+              "info": {
+                "href": "/profile/576730534756?st.cmd=friendMain&amp;st.friendId=576730534756",
+                "shortLink": "/profile/576730534756",
+                "uid": "576730534756",
+                "name": "User Test",
+                "firstName": "User",
+                "lastName": "Test",
+                "gender": "MALE",
+                "age": 33,
+                "isVip": false,
+                "isStar": false,
+                "isBirthdayCakeToday": false,
+                "newbie": false
+              },
+              "location": "Индия",
+              "userStatus": "OFFLINE",
+              "isSubscribed": false,
+              "isSubscriptionAllowed": false
+            },
+            "shortcutMenuHref": "/dk?cmd=ShortcutMenu&amp;sc=USER_CARD&amp;t=UserMenu&amp;sl=GLOBAL_SEARCH_USERS&amp;id=576730534756&amp;sp=28&amp;sq=Test+User+&amp;sr=on",
+            "scope": "PORTAL",
+            "type": "User",
+            "stat": {
+              "entity": "USER",
+              "entityId": "576730534756",
+              "location": "GLOBAL_SEARCH_USERS",
+              "card": "USER_CARD",
+              "query": "Test User ",
+              "position": 28,
+              "item": "REGULAR",
+              "scope": "PORTAL"
+            }
+          },
+          {
+            "user": {
+              "href": "/profile/580855705038?st.cmd=friendMain&amp;st.friendId=580855705038",
+              "messageHref": "/messages/580855705038?cmd=ConversationWrapper&amp;st.convId=PRIVATE_580855705038&amp;st.msgLIR=off&amp;st.cmd=userMain",
+              "info": {
+                "href": "/profile/580855705038?st.cmd=friendMain&amp;st.friendId=580855705038",
+                "shortLink": "/profile/580855705038",
+                "uid": "580855705038",
+                "name": "User Test",
+                "firstName": "User",
+                "lastName": "Test",
+                "gender": "MALE",
+                "age": 33,
+                "isVip": false,
+                "isStar": false,
+                "isBirthdayCakeToday": false,
+                "newbie": false
+              },
+              "location": "Россия",
+              "userStatus": "OFFLINE",
+              "isSubscribed": false,
+              "isSubscriptionAllowed": false
+            },
+            "shortcutMenuHref": "/dk?cmd=ShortcutMenu&amp;sc=USER_CARD&amp;t=UserMenu&amp;sl=GLOBAL_SEARCH_USERS&amp;id=580855705038&amp;sp=29&amp;sq=Test+User+&amp;sr=on",
+            "scope": "PORTAL",
+            "type": "User",
+            "stat": {
+              "entity": "USER",
+              "entityId": "580855705038",
+              "location": "GLOBAL_SEARCH_USERS",
+              "card": "USER_CARD",
+              "query": "Test User ",
+              "position": 29,
+              "item": "REGULAR",
+              "scope": "PORTAL"
+            }
+          },
+          {
+            "user": {
+              "href": "/profile/529309312818?st.cmd=friendMain&amp;st.friendId=529309312818",
+              "messageHref": "/messages/529309312818?cmd=ConversationWrapper&amp;st.convId=PRIVATE_529309312818&amp;st.msgLIR=off&amp;st.cmd=userMain",
+              "info": {
+                "href": "/profile/529309312818?st.cmd=friendMain&amp;st.friendId=529309312818",
+                "shortLink": "/profile/529309312818",
+                "uid": "529309312818",
+                "name": "User Test",
+                "firstName": "User",
+                "lastName": "Test",
+                "gender": "MALE",
+                "age": 32,
+                "photoId": "389083357746",
+                "isVip": false,
+                "isStar": false,
+                "isBirthdayCakeToday": false,
+                "imageUrl": "https://i2.mycdn.me/i?r=AyH4iRPQ2q0otWIFepML2LxRmEch8boaNNCK6EMqcwTLtA",
+                "newbie": false
+              },
+              "location": "Ереван, Армения",
+              "community": {
+                "info": {
+                  "href": "/community/14804687472?st.cmd=communityUsers&amp;st.groupId=14804687472",
+                  "uid": "14804687472",
+                  "name": "21 школа им. А. Ширванзаде",
+                  "createdMs": "1186057670983",
+                  "business": false,
+                  "minAge": 0,
+                  "isCommunity": true,
+                  "category": "SCHOOL",
+                  "isHappening": false,
+                  "isClosed": false,
+                  "isSecret": false
+                },
+                "href": "/dk?st.cmd=searchResult&amp;st.mode=Users&amp;st.school=14804687472&amp;st.query=Test+User+&amp;st.grmode=Groups"
+              },
+              "userStatus": "OFFLINE",
+              "isSubscribed": false,
+              "isSubscriptionAllowed": false
+            },
+            "shortcutMenuHref": "/dk?cmd=ShortcutMenu&amp;sc=USER_CARD&amp;t=UserMenu&amp;sl=GLOBAL_SEARCH_USERS&amp;id=529309312818&amp;sp=30&amp;sq=Test+User+&amp;sr=on",
+            "scope": "PORTAL",
+            "type": "User",
+            "stat": {
+              "entity": "USER",
+              "entityId": "529309312818",
+              "location": "GLOBAL_SEARCH_USERS",
+              "card": "USER_CARD",
+              "query": "Test User ",
+              "position": 30,
+              "item": "REGULAR",
+              "scope": "PORTAL"
+            }
+          },
+          {
+            "user": {
+              "href": "/profile/336033819518?st.cmd=friendMain&amp;st.friendId=336033819518",
+              "info": {
+                "href": "/profile/336033819518?st.cmd=friendMain&amp;st.friendId=336033819518",
+                "shortLink": "/profile/336033819518",
+                "uid": "336033819518",
+                "name": "User Test",
+                "firstName": "User",
+                "lastName": "Test",
+                "gender": "MALE",
+                "isVip": false,
+                "isStar": false,
+                "isBirthdayCakeToday": false,
+                "newbie": false
+              },
+              "location": "Москва, Россия",
+              "userStatus": "OFFLINE",
+              "isSubscribed": false,
+              "isSubscriptionAllowed": false
+            },
+            "shortcutMenuHref": "/dk?cmd=ShortcutMenu&amp;sc=USER_CARD&amp;t=UserMenu&amp;sl=GLOBAL_SEARCH_USERS&amp;id=336033819518&amp;sp=31&amp;sq=Test+User+&amp;sr=on",
+            "scope": "PORTAL",
+            "type": "User",
+            "stat": {
+              "entity": "USER",
+              "entityId": "336033819518",
+              "location": "GLOBAL_SEARCH_USERS",
+              "card": "USER_CARD",
+              "query": "Test User ",
+              "position": 31,
+              "item": "REGULAR",
+              "scope": "PORTAL"
+            }
+          },
+          {
+            "user": {
+              "href": "/profile/533180995593?st.cmd=friendMain&amp;st.friendId=533180995593",
+              "messageHref": "/messages/533180995593?cmd=ConversationWrapper&amp;st.convId=PRIVATE_533180995593&amp;st.msgLIR=off&amp;st.cmd=userMain",
+              "info": {
+                "href": "/profile/533180995593?st.cmd=friendMain&amp;st.friendId=533180995593",
+                "shortLink": "/profile/533180995593",
+                "uid": "533180995593",
+                "name": "user test",
+                "firstName": "user",
+                "lastName": "test",
+                "gender": "MALE",
+                "isVip": false,
+                "isStar": false,
+                "isBirthdayCakeToday": false,
+                "newbie": false
+              },
+              "location": "Краснодар, Россия",
+              "userStatus": "OFFLINE",
+              "isSubscribed": false,
+              "isSubscriptionAllowed": false
+            },
+            "shortcutMenuHref": "/dk?cmd=ShortcutMenu&amp;sc=USER_CARD&amp;t=UserMenu&amp;sl=GLOBAL_SEARCH_USERS&amp;id=533180995593&amp;sp=32&amp;sq=Test+User+&amp;sr=on",
+            "scope": "PORTAL",
+            "type": "User",
+            "stat": {
+              "entity": "USER",
+              "entityId": "533180995593",
+              "location": "GLOBAL_SEARCH_USERS",
+              "card": "USER_CARD",
+              "query": "Test User ",
+              "position": 32,
+              "item": "REGULAR",
+              "scope": "PORTAL"
+            }
+          },
+          {
+            "user": {
+              "href": "/profile/554642626124?st.cmd=friendMain&amp;st.friendId=554642626124",
+              "messageHref": "/messages/554642626124?cmd=ConversationWrapper&amp;st.convId=PRIVATE_554642626124&amp;st.msgLIR=off&amp;st.cmd=userMain",
+              "info": {
+                "href": "/profile/554642626124?st.cmd=friendMain&amp;st.friendId=554642626124",
+                "shortLink": "/profile/554642626124",
+                "uid": "554642626124",
+                "name": "User Test",
+                "firstName": "User",
+                "lastName": "Test",
+                "gender": "FEMALE",
+                "age": 32,
+                "isVip": false,
+                "isStar": false,
+                "isBirthdayCakeToday": false,
+                "newbie": false
+              },
+              "location": "Москва, Россия",
+              "userStatus": "OFFLINE",
+              "isSubscribed": false,
+              "isSubscriptionAllowed": false
+            },
+            "shortcutMenuHref": "/dk?cmd=ShortcutMenu&amp;sc=USER_CARD&amp;t=UserMenu&amp;sl=GLOBAL_SEARCH_USERS&amp;id=554642626124&amp;sp=33&amp;sq=Test+User+&amp;sr=on",
+            "scope": "PORTAL",
+            "type": "User",
+            "stat": {
+              "entity": "USER",
+              "entityId": "554642626124",
+              "location": "GLOBAL_SEARCH_USERS",
+              "card": "USER_CARD",
+              "query": "Test User ",
+              "position": 33,
+              "item": "REGULAR",
+              "scope": "PORTAL"
+            }
+          },
+          {
+            "user": {
+              "href": "/profile/559714065134?st.cmd=friendMain&amp;st.friendId=559714065134",
+              "messageHref": "/messages/559714065134?cmd=ConversationWrapper&amp;st.convId=PRIVATE_559714065134&amp;st.msgLIR=off&amp;st.cmd=userMain",
+              "info": {
+                "href": "/profile/559714065134?st.cmd=friendMain&amp;st.friendId=559714065134",
+                "shortLink": "/profile/559714065134",
+                "uid": "559714065134",
+                "name": "0115 test new user",
+                "firstName": "0115",
+                "lastName": "test new user",
+                "gender": "MALE",
+                "age": 31,
+                "isVip": false,
+                "isStar": false,
+                "isBirthdayCakeToday": false,
+                "newbie": false
+              },
+              "location": "Rostov, Россия",
+              "userStatus": "OFFLINE",
+              "isSubscribed": false,
+              "isSubscriptionAllowed": false
+            },
+            "shortcutMenuHref": "/dk?cmd=ShortcutMenu&amp;sc=USER_CARD&amp;t=UserMenu&amp;sl=GLOBAL_SEARCH_USERS&amp;id=559714065134&amp;sp=34&amp;sq=Test+User+&amp;sr=on",
+            "scope": "PORTAL",
+            "type": "User",
+            "stat": {
+              "entity": "USER",
+              "entityId": "559714065134",
+              "location": "GLOBAL_SEARCH_USERS",
+              "card": "USER_CARD",
+              "query": "Test User ",
+              "position": 34,
+              "item": "REGULAR",
+              "scope": "PORTAL"
+            }
+          },
+          {
+            "user": {
+              "href": "/profile/571946360366?st.cmd=friendMain&amp;st.friendId=571946360366",
+              "messageHref": "/messages/571946360366?cmd=ConversationWrapper&amp;st.convId=PRIVATE_571946360366&amp;st.msgLIR=off&amp;st.cmd=userMain",
+              "info": {
+                "href": "/profile/571946360366?st.cmd=friendMain&amp;st.friendId=571946360366",
+                "shortLink": "/profile/571946360366",
+                "uid": "571946360366",
+                "name": "Test User",
+                "firstName": "Test",
+                "lastName": "User",
+                "gender": "MALE",
+                "age": 29,
+                "isVip": false,
+                "isStar": false,
+                "isBirthdayCakeToday": false,
+                "newbie": false
+              },
+              "location": "Roseland, США",
+              "userStatus": "OFFLINE",
+              "isSubscribed": false,
+              "isSubscriptionAllowed": false
+            },
+            "shortcutMenuHref": "/dk?cmd=ShortcutMenu&amp;sc=USER_CARD&amp;t=UserMenu&amp;sl=GLOBAL_SEARCH_USERS&amp;id=571946360366&amp;sp=35&amp;sq=Test+User+&amp;sr=on",
+            "scope": "PORTAL",
+            "type": "User",
+            "stat": {
+              "entity": "USER",
+              "entityId": "571946360366",
+              "location": "GLOBAL_SEARCH_USERS",
+              "card": "USER_CARD",
+              "query": "Test User ",
+              "position": 35,
+              "item": "REGULAR",
+              "scope": "PORTAL"
+            }
+          },
+          {
+            "user": {
+              "href": "/profile/586119450888?st.cmd=friendMain&amp;st.friendId=586119450888",
+              "messageHref": "/messages/586119450888?cmd=ConversationWrapper&amp;st.convId=PRIVATE_586119450888&amp;st.msgLIR=off&amp;st.cmd=userMain",
+              "info": {
+                "href": "/profile/586119450888?st.cmd=friendMain&amp;st.friendId=586119450888",
+                "shortLink": "/profile/586119450888",
+                "uid": "586119450888",
+                "name": "test user",
+                "firstName": "test",
+                "lastName": "user",
+                "gender": "MALE",
+                "age": 25,
+                "isVip": false,
+                "isStar": false,
+                "isBirthdayCakeToday": false,
+                "newbie": false
+              },
+              "location": "Россия",
+              "userStatus": "OFFLINE",
+              "isSubscribed": false,
+              "isSubscriptionAllowed": false
+            },
+            "shortcutMenuHref": "/dk?cmd=ShortcutMenu&amp;sc=USER_CARD&amp;t=UserMenu&amp;sl=GLOBAL_SEARCH_USERS&amp;id=586119450888&amp;sp=36&amp;sq=Test+User+&amp;sr=on",
+            "scope": "PORTAL",
+            "type": "User",
+            "stat": {
+              "entity": "USER",
+              "entityId": "586119450888",
+              "location": "GLOBAL_SEARCH_USERS",
+              "card": "USER_CARD",
+              "query": "Test User ",
+              "position": 36,
+              "item": "REGULAR",
+              "scope": "PORTAL"
+            }
+          },
+          {
+            "user": {
+              "href": "/profile/594657107472?st.cmd=friendMain&amp;st.friendId=594657107472",
+              "messageHref": "/messages/594657107472?cmd=ConversationWrapper&amp;st.convId=PRIVATE_594657107472&amp;st.msgLIR=off&amp;st.cmd=userMain",
+              "info": {
+                "href": "/profile/594657107472?st.cmd=friendMain&amp;st.friendId=594657107472",
+                "shortLink": "/profile/594657107472",
+                "uid": "594657107472",
+                "name": "test user",
+                "firstName": "test",
+                "lastName": "user",
+                "gender": "MALE",
+                "age": 46,
+                "isVip": false,
+                "isStar": false,
+                "isBirthdayCakeToday": false,
+                "newbie": false
+              },
+              "location": "Россия",
+              "userStatus": "OFFLINE",
+              "isSubscribed": false,
+              "isSubscriptionAllowed": false
+            },
+            "shortcutMenuHref": "/dk?cmd=ShortcutMenu&amp;sc=USER_CARD&amp;t=UserMenu&amp;sl=GLOBAL_SEARCH_USERS&amp;id=594657107472&amp;sp=37&amp;sq=Test+User+&amp;sr=on",
+            "scope": "PORTAL",
+            "type": "User",
+            "stat": {
+              "entity": "USER",
+              "entityId": "594657107472",
+              "location": "GLOBAL_SEARCH_USERS",
+              "card": "USER_CARD",
+              "query": "Test User ",
+              "position": 37,
+              "item": "REGULAR",
+              "scope": "PORTAL"
+            }
+          },
+          {
+            "user": {
+              "href": "/profile/572717826931?st.cmd=friendMain&amp;st.friendId=572717826931",
+              "messageHref": "/messages/572717826931?cmd=ConversationWrapper&amp;st.convId=PRIVATE_572717826931&amp;st.msgLIR=off&amp;st.cmd=userMain",
+              "info": {
+                "href": "/profile/572717826931?st.cmd=friendMain&amp;st.friendId=572717826931",
+                "shortLink": "/profile/572717826931",
+                "uid": "572717826931",
+                "name": "Test User",
+                "firstName": "Test",
+                "lastName": "User",
+                "gender": "FEMALE",
+                "age": 53,
+                "isVip": false,
+                "isStar": false,
+                "isBirthdayCakeToday": false,
+                "newbie": false
+              },
+              "location": "Россия",
+              "userStatus": "OFFLINE",
+              "isSubscribed": false,
+              "isSubscriptionAllowed": false
+            },
+            "shortcutMenuHref": "/dk?cmd=ShortcutMenu&amp;sc=USER_CARD&amp;t=UserMenu&amp;sl=GLOBAL_SEARCH_USERS&amp;id=572717826931&amp;sp=38&amp;sq=Test+User+&amp;sr=on",
+            "scope": "PORTAL",
+            "type": "User",
+            "stat": {
+              "entity": "USER",
+              "entityId": "572717826931",
+              "location": "GLOBAL_SEARCH_USERS",
+              "card": "USER_CARD",
+              "query": "Test User ",
+              "position": 38,
+              "item": "REGULAR",
+              "scope": "PORTAL"
+            }
+          },
+          {
+            "user": {
+              "href": "/profile/580547613725?st.cmd=friendMain&amp;st.friendId=580547613725",
+              "messageHref": "/messages/580547613725?cmd=ConversationWrapper&amp;st.convId=PRIVATE_580547613725&amp;st.msgLIR=off&amp;st.cmd=userMain",
+              "info": {
+                "href": "/profile/580547613725?st.cmd=friendMain&amp;st.friendId=580547613725",
+                "shortLink": "/profile/580547613725",
+                "uid": "580547613725",
+                "name": "test user",
+                "firstName": "test",
+                "lastName": "user",
+                "gender": "MALE",
+                "age": 12,
+                "isVip": false,
+                "isStar": false,
+                "isBirthdayCakeToday": false,
+                "newbie": false
+              },
+              "location": "Москва, Россия",
+              "userStatus": "OFFLINE",
+              "isSubscribed": false,
+              "isSubscriptionAllowed": false
+            },
+            "shortcutMenuHref": "/dk?cmd=ShortcutMenu&amp;sc=USER_CARD&amp;t=UserMenu&amp;sl=GLOBAL_SEARCH_USERS&amp;id=580547613725&amp;sp=39&amp;sq=Test+User+&amp;sr=on",
+            "scope": "PORTAL",
+            "type": "User",
+            "stat": {
+              "entity": "USER",
+              "entityId": "580547613725",
+              "location": "GLOBAL_SEARCH_USERS",
+              "card": "USER_CARD",
+              "query": "Test User ",
+              "position": 39,
+              "item": "REGULAR",
+              "scope": "PORTAL"
+            }
+          }
+        ]
+      },
+      "exact": true
+    }
+  }
+}

@@ -12,11 +12,13 @@ class People extends PeopleAbstract
     protected string $name;
     protected FriendsClient $friendsClient;
     protected $age = null;
-    public function __construct(string $id, string $name, int $age = null, FriendsClient $friendsClient) {
+    protected ?string $location = null;
+    public function __construct(string $id, string $name, int $age = null, FriendsClient $friendsClient, string $location = null) {
         $this->id = $id;
         $this->name = $name;
         $this->age = $age;
         $this->friendsClient = $friendsClient;
+        $this->location = $location;
     }
 
     public function getId() {
@@ -37,5 +39,13 @@ class People extends PeopleAbstract
      */
     public function getFriends():array {
         return $this->friendsClient->getFriends($this->id);
+    }
+
+    /**
+     * @return string|null
+     */
+    public function getLocation(): ?string
+    {
+        return $this->location;
     }
 }

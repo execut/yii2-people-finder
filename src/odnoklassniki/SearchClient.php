@@ -51,7 +51,8 @@ class SearchClient
             return false;
         }
 
-        $info = $results[$currentPeopleOnPageKey]['user']['info'];
+        $user = $results[$currentPeopleOnPageKey]['user'];
+        $info = $user['info'];
         $name = $info['name'];
         $id = $info['uid'];
         if (empty($info['age'])) {
@@ -60,7 +61,12 @@ class SearchClient
             $age = $info['age'];
         }
 
-        $people = new People($id, $name, $age, new FriendsClient());
+        $location = null;
+        if (!empty($user['location'])) {
+            $location = $user['location'];
+        }
+
+        $people = new People($id, $name, $age, new FriendsClient(), $location);
 
         return $people;
     }
@@ -81,11 +87,11 @@ class SearchClient
         return $values;
     }
 
-    protected function getCurrentPage() {
+    protected function getCurrentPage():int {
         return floor($this->getCurrentPeopleKey() / $this->getPageSize());
     }
 
-    protected function getCurrentPeopleOnPageKey() {
+    protected function getCurrentPeopleOnPageKey():int {
         return $this->getCurrentPeopleKey() - $this->getCurrentPage() * $this->getPageSize();
     }
     /**
@@ -100,7 +106,7 @@ class SearchClient
         $this->currentPeopleKey = $key;
     }
 
-    protected function getPageSize() {
+    protected function getPageSize():int {
         return 20;
     }
 }

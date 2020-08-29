@@ -31,6 +31,7 @@ class SearchClientTest extends Unit
         $this->assertEquals('123', $people->getId());
         $this->assertEquals($query, $people->getName());
         $this->assertEquals(30, $people->getAge());
+        $this->assertEquals('Москва, Россия', $people->getLocation());
     }
 
     public function testGetPeopleWithoutAge() {
@@ -70,7 +71,8 @@ class SearchClientTest extends Unit
                             'results' => [
                                 0 => [
                                     'user' => [
-                                        'info' => $info
+                                        'info' => $info,
+                                        "location" => 'Москва, Россия',
                                     ]
                                 ]
                             ],
