@@ -2,25 +2,26 @@
 /**
  */
 
-namespace execut\peoplesFinder\tests\unit;
+namespace execut\peopleFinder\Tests\Unit;
 
 use Codeception\Test\Unit;
-use execut\peoplesFinder\People;
-use execut\peoplesFinder\PeoplesComparator;
-use execut\peoplesFinder\peoplesComparator\comparators\Comparator;
-use execut\peoplesFinder\peoplesComparator\Result;
+use execut\peopleFinder\Name\Simple;
+use execut\peopleFinder\Person;
+use execut\peopleFinder\PeopleComparator;
+use execut\peopleFinder\PeopleComparator\Comparators\Comparator;
+use execut\peopleFinder\PeopleComparator\Result;
 
 class PeoplesComparatorTest extends Unit
 {
     public function testRun()
     {
-        $people = new People('Test User');
-        $otherPeople = new People('Other User');
+        $people = new Person\Simple(123, new Simple('Test User'));
+        $otherPeople = new Person\Simple(123, new Simple('Other User'));
         $peoples = [
             $people,
             $otherPeople,
         ];
-        $findedPeople = new People('Test User');
+        $findedPeople = new Person\Simple(124, new Simple('Test User'));
         $comparator = $this->getMockBuilder(Comparator::class)->getMock();
         $comparator->expects($this->at(0))
             ->method('compare')

@@ -2,20 +2,20 @@
 /**
  */
 
-namespace execut\peoplesFinder;
+namespace execut\peopleFinder;
 
-use execut\peoplesFinder\peoplesComparator\comparators\Comparator;
-use execut\peoplesFinder\peoplesComparator\Result;
+use execut\peopleFinder\Person\Person;
+use execut\peopleFinder\PeopleComparator\Comparators\Comparator;
 
 class PeoplesComparator
 {
     /**
-     * @var PeopleInterface[]
+     * @var Person[]
      */
     protected array $peoples;
-    protected PeopleInterface $findedPeople;
+    protected Person $findedPeople;
     protected Comparator $comparator;
-    public function __construct(array $peoples, PeopleInterface $findedPeople, Comparator $comparator)
+    public function __construct(array $peoples, Person $findedPeople, Comparator $comparator)
     {
         $this->peoples = $peoples;
         $this->findedPeople = $findedPeople;

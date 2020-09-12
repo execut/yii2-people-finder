@@ -6,12 +6,12 @@
  * @copyright Copyright (c) 2020 Mamaev Yuriy (eXeCUT)
  * @license http://www.apache.org/licenses/LICENSE-2.0
  */
-namespace execut\peoplesFinder;
+namespace execut\peopleFinder;
 
 
-use execut\peoplesFinder\peoplesComparator\comparators\Age;
-use execut\peoplesFinder\peoplesComparator\comparators\Friends;
-use execut\peoplesFinder\peoplesComparator\Result;
+use execut\peopleFinder\PeopleComparator\Comparators\Age;
+use execut\peopleFinder\PeopleComparator\Comparators\Friends;
+use execut\peopleFinder\PeopleComparator\Result;
 use yii\base\Exception;
 
 class Report
@@ -44,9 +44,9 @@ class Report
 //            }
             if (!$people) {
                 $result->getPeople();
-                if ($totalCount != ($key +1)) {
-                    throw new Exception('Too early ended people');
-                }
+//                if ($totalCount != ($key +1)) {
+//                    throw new Exception('Too early ended people');
+//                }
                 break;
             }
 
@@ -59,7 +59,7 @@ class Report
             }
 
             $findedPeoples[$people->getId()] = $people;
-            $result->nextPeople();
+            $result->next();
         }
 
         $comparators = [

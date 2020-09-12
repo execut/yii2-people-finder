@@ -1,14 +1,14 @@
 {
-  "name": "execut/yii2-peoples-finder",
-  "description": "Extension for search peoples via social networks. Now supported only ok.ru",
-  "keywords": ["yii2 ok.ru", "yii2 social networks", "yii2 peoples finder"],
-  "homepage": "https://github.com/execut/yii2-peoples-finder",
+  "name": "execut/yii2-people-finder",
+  "description": "Extension for search people via social networks. Now supported only ok.ru",
+  "keywords": ["yii2 ok.ru", "yii2 social networks", "yii2 people finder"],
+  "homepage": "https://github.com/execut/yii2-people-finder",
   "type": "yii2-extension",
   "license": "Apache-2.0",
   "support": {
-    "issues": "https://github.com/execut/yii2-peoples-finder/issues?state=open",
-    "wiki": "https://github.com/execut/yii2-peoples-finder/wiki",
-    "source": "https://github.com/execut/yii2-peoples-finder"
+    "issues": "https://github.com/execut/yii2-people-finder/issues?state=open",
+    "wiki": "https://github.com/execut/yii2-people-finder/wiki",
+    "source": "https://github.com/execut/yii2-people-finder"
   },
   "authors": [
     {
@@ -42,11 +42,11 @@
     }
   ],
   "extra": {
-    "bootstrap": "execut\\peoplesFinder\\bootstrap\\Auto"
+    "bootstrap": "execut\\peopleFinder\\bootstrap\\Auto"
   },
   "autoload": {
     "psr-4": {
-      "execut\\peoplesFinder\\": "src"
+      "execut\\peopleFinder\\": "src"
     }
   }
 }

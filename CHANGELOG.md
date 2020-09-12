@@ -1,4 +1,4 @@
-execut\peoplesFinder releases
+execut\peopleFinder releases
 ==============================================
 
 0.1.0

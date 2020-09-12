@@ -1,11 +1,11 @@
 # Yii2 peoples finder
 Library for search peoples via social networks. Now supported only ok.ru.
 
-For license information check the [LICENSE-file](https://github.com/execut/yii2-peoples-finder/blob/master/LICENSE.md).
+For license information check the [LICENSE-file](https://github.com/execut/yii2-people-finder/blob/master/LICENSE.md).
 
-[![Latest Stable Version](https://poser.pugx.org/execut/yii2-peoples-finder/v/stable.png)](https://packagist.org/packages/execut/yii2-peoples-finder)
-[![Total Downloads](https://poser.pugx.org/execut/yii2-peoples-finder/downloads.png)](https://packagist.org/packages/execut/yii2-peoples-finder)
-[![Build Status](https://travis-ci.com/execut/yii2-peoples-finder.svg?branch=master)](https://travis-ci.com/execut/yii2-peoples-finder)
+[![Latest Stable Version](https://poser.pugx.org/execut/yii2-people-finder/v/stable.png)](https://packagist.org/packages/execut/yii2-people-finder)
+[![Total Downloads](https://poser.pugx.org/execut/yii2-people-finder/downloads.png)](https://packagist.org/packages/execut/yii2-people-finder)
+[![Build Status](https://travis-ci.com/execut/yii2-people-finder.svg?branch=master)](https://travis-ci.com/execut/yii2-people-finder)
 
 
 Installation
@@ -16,13 +16,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require execut/yii2-peoples-finder
+php composer.phar require execut/yii2-people-finder
 ```
 
 or add
 
 ```
-"execut/yii2-peoples-finder": "dev-master"
+"execut/yii2-people-finder": "dev-master"
 ```
 
 to the require section of your `composer.json` file.
@@ -39,7 +39,7 @@ Usage
 
 Run console command and get report:
 ```bash
-./yii peoplesFinder "people name" "GEDCOM file path"
+./yii peopleFinder "people name" "GEDCOM file path"
 ```
 Where:
 people name - Finded people full name in format like "Anna Sergeevna Efremova (Pushkina)" (Pushkina - maiden name) or "Anna Efremova" or "Anna Sergeevna Efremova".
