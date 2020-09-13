@@ -9,8 +9,8 @@
 namespace execut\peopleFinder;
 
 
-use execut\peopleFinder\PeopleComparator\Comparators\Age;
-use execut\peopleFinder\PeopleComparator\Comparators\Friends;
+use execut\peopleFinder\PeopleComparator\Comparator\Age;
+use execut\peopleFinder\PeopleComparator\Comparator\Friends;
 use execut\peopleFinder\PeopleComparator\Result;
 use yii\base\Exception;
 
@@ -68,7 +68,7 @@ class Report
         ];
         foreach ($comparators as $comparator) {
             echo get_class($comparator) . ' compare' . "\n";
-            $peoplesComparator = new PeoplesComparator($findedPeoples, $targetPeople, $comparator);
+            $peoplesComparator = new PeopleComparator($findedPeoples, $targetPeople, $comparator);
             /**
              * @var Result[] $results
              */
@@ -77,7 +77,7 @@ class Report
                 return $a->getQuality() < $b->getQuality();
             });
             foreach ($results as $result) {
-                $resultPeople = $result->getPeople();
+                $resultPeople = $result->getPerson();
                 $id = $resultPeople->getId();
                 $info = '';
                 if ($renderer = $result->getRenderer()) {

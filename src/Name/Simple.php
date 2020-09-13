@@ -24,57 +24,105 @@ class Simple implements Name
     {
         return $this->name;
     }
-//    public function getFirstName() {
-//        return explode(' ', $this->getName())[0];
-//    }
-//
-//    public function getHusbandName() {
-//        $nameParts = explode('(', $this->getName());
-//        if (!empty($nameParts[1])) {
-//            $part = explode(' ', $nameParts[0])[1];
-//
-//            return $part;
-//        }
-//
-//        $parts = explode(' ', $this->getName());
-//
-//        return $parts[count($parts) - 1];
-//    }
-//
-//    public function getSurname()
-//    {
-//        $nameParts = explode('(', $this->getName());
-//        if (!empty($nameParts[1])) {
-//            return trim($nameParts[1], ')');
-//        }
-//
-//        $parts = explode(' ', $this->getName());
-//
-//        return $parts[count($parts) - 1];
-//    }
-//
-//    public function isEqual(PeopleInterface $people):bool {
-//        if (mb_strtolower($this->getFirstName()) !== mb_strtolower($people->getFirstName())) {
-//            return false;
-//        }
-//
-//        $peopleNames = [
-//            mb_strtolower($people->getHusbandName()),
-//            mb_strtolower($people->getSurname())
-//        ];
-//        $peopleNames = array_filter($peopleNames);
-//
-//        $selfNames = [
-//            mb_strtolower($this->getHusbandName()),
-//            mb_strtolower($this->getSurname())
-//        ];
-//        $selfNames = array_filter($selfNames);
-//        foreach ($peopleNames as $peopleName) {
-//            if (in_array($peopleName, $selfNames)) {
-//                return true;
-//            }
-//        }
-//
-//        return false;
-//    }
+
+    public function getFirstname(): string
+    {
+        $parts = $this->getNameParts();
+
+        $name = $parts[0];
+
+        return $name;
+    }
+
+    protected function getNameParts(): array
+    {
+        return explode(' ', $this->name);
+    }
+
+    public function getSurname(): ?string
+    {
+        $fullSurname = $this->getFullSurname();
+        if (strpos($fullSurname, '-') !== false) {
+            $parts = explode('-', $fullSurname);
+            return $parts[0];
+        }
+
+        return $fullSurname;
+    }
+
+    public function getSecondSurname(): ?string
+    {
+        $fullSurname = $this->getFullSurname();
+        if (strpos($fullSurname, '-') !== false) {
+            $parts = explode('-', $fullSurname);
+            if (!empty($parts[1])) {
+                return $parts[1];
+            }
+        }
+
+        return null;
+    }
+
+    public function getSurnameAtBirth(): ?string
+    {
+        $parts = $this->getNameParts();
+        if (empty($parts[1])) {
+            return null;
+        }
+
+        if (count($parts) == 2 && $this->isSurnameAtBirth($parts[1])) {
+            return trim($parts[1], '()');
+        } else if (count($parts) == 3 && $this->isSurnameAtBirth($parts[2])) {
+            return trim($parts[2], '()');
+        } else if (count($parts) == 4 && $this->isSurnameAtBirth($parts[3])) {
+            return trim($parts[3], '()');
+        }
+
+        return null;
+    }
+
+    protected function isSurnameAtBirth($name)
+    {
+        return strpos($name, '(') !== false;
+    }
+
+    public function getSecondname(): ?string
+    {
+
+        $parts = $this->getNameParts();
+        if (empty($parts[1])) {
+            return null;
+        }
+
+        if (count($parts) == 3 && !$this->isSurnameAtBirth($parts[2]) || count($parts) == 4) {
+            return $parts[1];
+        }
+
+        return null;
+    }
+
+    /**
+     * @return mixed|null
+     */
+    protected function getFullSurname()
+    {
+        $parts = $this->getNameParts();
+        if (empty($parts[1])) {
+            return null;
+        }
+
+        if (count($parts) == 2) {
+            return $parts[1];
+        }
+
+        if (count($parts) > 2) {
+            if (!$this->isSurnameAtBirth($parts[2])) {
+                return $parts[2];
+            } else {
+                return $parts[1];
+            }
+        }
+
+        return null;
+    }
 }

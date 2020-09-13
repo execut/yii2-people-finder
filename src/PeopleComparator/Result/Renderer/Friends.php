@@ -14,8 +14,10 @@ use execut\peopleFinder\PeopleComparator\Result\Renderer;
 class Friends implements Renderer
 {
     protected $equalFriends = [];
-    public function __construct(array $equalFriends) {
+    protected int $peopleFrieldsCount;
+    public function __construct(array $equalFriends, int $peopleFriendsCount) {
         $this->equalFriends = $equalFriends;
+        $this->peopleFrieldsCount = $peopleFriendsCount;
     }
 
     /**
@@ -29,10 +31,10 @@ class Friends implements Renderer
     public function render()
     {
         $result = '';
-        foreach ($this->equalFriends as $equalFriend) {
-            $result .= $equalFriend->getName() . ', ';
+        foreach ($this->equalFriends as $equalFriendPair) {
+            $result .= $equalFriendPair[0]->getName()->getName() . '/' . $equalFriendPair[1]->getName()->getName() . ', ';
         }
 
-        return trim($result, ', ');
+        return trim($result, ', ') . '. Total friends: ' . $this->peopleFrieldsCount;
     }
 }

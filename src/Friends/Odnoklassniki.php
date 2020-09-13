@@ -26,6 +26,12 @@ class Odnoklassniki implements Friends
         $this->adapter = $adapter;
     }
 
+
+    public function reset()
+    {
+        $this->position = 0;
+    }
+
     public function next():bool
     {
         $this->getFriends();

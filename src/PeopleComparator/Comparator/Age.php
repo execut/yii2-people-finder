@@ -2,15 +2,14 @@
 /**
  */
 
-namespace execut\peopleFinder\PeopleComparator\Comparators;
+namespace execut\peopleFinder\PeopleComparator\Comparator;
 
-
-use execut\peopleFinder\PeopleInterface;
 use execut\peopleFinder\PeopleComparator\Result;
+use execut\peopleFinder\Person\Person;
 
 class Age implements Comparator
 {
-    public function compare(PeopleInterface $peopleOne, PeopleInterface $peopleTwo): Result
+    public function compare(Person $peopleOne, Person $peopleTwo): Result
     {
         $ageOne = $peopleOne->getAge();
         $ageTwo = $peopleTwo->getAge();

@@ -15,13 +15,22 @@ use execut\peopleFinder\Search\Vk;
 
 class VkTest extends Unit
 {
-    public function testGetPeople() {
-        $client = new Vk('Test User');
-        $this->assertEquals(681, $client->getTotalCount());
+    public function testGetPeople()
+    {
+        $client = new Vk('Настя Ли (Комарова)');
+        $this->assertEquals(1, $client->getTotalCount());
         $people = $client->current();
         $this->assertInstanceOf(Person::class, $people);
-        $this->assertEquals('324815480', $people->getId());
-        $this->assertEquals('Test User', $people->getName()->getName());
+        $this->assertEquals('27775445', $people->getId());
+        $this->assertEquals('Настя Ли (Комарова)', $people->getName()->getName());
+        $this->assertEquals(29, $people->getAge());
+        $this->assertInstanceOf(\execut\peopleFinder\Friends\Vk::class, $people->getFriends());
 //        $this->assertEquals('Москва, Россия', $people->getLocation());
+    }
+
+    public function testGetPeopleWhenMore1000()
+    {
+        $client = new Vk('Татьяна Колесникова');
+        $this->assertGreaterThan(6000, $client->getTotalCount());
     }
 }

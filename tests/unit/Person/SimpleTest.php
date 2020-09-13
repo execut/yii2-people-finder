@@ -21,12 +21,11 @@ class SimpleTest extends Unit
     {
         $name = $this->getMockBuilder(Name::class)->getMock();
         $friends = $this->getMockBuilder(Friends::class)->getMock();
-        $info = $this->getMockBuilder(Info::class)->getMock();
-        $people = new Person\Simple(123, $name, $friends, $info);
+        $people = new Person\Simple(123, $name, $friends, 50);
 
         $this->assertEquals(123, $people->getId());
         $this->assertEquals($name, $people->getName());
         $this->assertEquals($friends, $people->getFriends());
-        $this->assertEquals($info, $people->getInfo());
+        $this->assertEquals(50, $people->getAge());
     }
 }

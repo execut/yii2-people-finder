@@ -42,7 +42,7 @@
     }
   ],
   "extra": {
-    "bootstrap": "execut\\peopleFinder\\bootstrap\\Auto"
+    "bootstrap": "execut\\peopleFinder\\Bootstrap\\Auto"
   },
   "autoload": {
     "psr-4": {

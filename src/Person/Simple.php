@@ -14,12 +14,13 @@ class Simple implements Person
     protected string $id;
     protected Name $name;
     protected ?Info $info;
-    public function __construct(string $id, Name $name, Friends $friends = null, Info $info = null)
+    protected ?int $age;
+    public function __construct(string $id, Name $name, Friends $friends = null, int $age = null)
     {
         $this->id = $id;
         $this->name = $name;
         $this->friends = $friends;
-        $this->info = $info;
+        $this->age = $age;
     }
 
     public function getFriends():?Friends
@@ -36,8 +37,8 @@ class Simple implements Person
         return $this->name;
     }
 
-    public function getInfo():?Info
+    public function getAge(): ?int
     {
-        return $this->info;
+        return $this->age;
     }
 }

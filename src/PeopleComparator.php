@@ -5,9 +5,9 @@
 namespace execut\peopleFinder;
 
 use execut\peopleFinder\Person\Person;
-use execut\peopleFinder\PeopleComparator\Comparators\Comparator;
+use execut\peopleFinder\PeopleComparator\Comparator\Comparator;
 
-class PeoplesComparator
+class PeopleComparator
 {
     /**
      * @var Person[]

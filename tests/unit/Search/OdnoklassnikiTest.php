@@ -30,7 +30,7 @@ class OdnoklassnikiTest extends Unit
         $this->assertInstanceOf(Simple::class, $people);
         $this->assertEquals('123', $people->getId());
         $this->assertEquals($query, $people->getName()->getName());
-//        $this->assertEquals(30, $people->getAge());
+        $this->assertEquals(30, $people->getAge());
 //        $this->assertEquals('Москва, Россия', $people->getLocation());
     }
 

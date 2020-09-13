@@ -9,12 +9,12 @@ use execut\peopleFinder\PeopleComparator\Result\Renderer;
 
 class Result
 {
-    protected Person $people;
+    protected Person $person;
     protected float $quality;
     protected ?Renderer $renderer;
-    public function __construct(Person $people, float $quality, Renderer $renderer = null)
+    public function __construct(Person $person, float $quality, Renderer $renderer = null)
     {
-        $this->people = $people;
+        $this->person = $person;
         $this->quality = $quality;
         $this->renderer = $renderer;
     }
@@ -24,8 +24,8 @@ class Result
         return $this->quality;
     }
 
-    public function getPeople() {
-        return $this->people;
+    public function getPerson() {
+        return $this->person;
     }
 
     public function getRenderer() {

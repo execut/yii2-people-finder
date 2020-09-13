@@ -57,7 +57,7 @@ class Odnoklassniki implements Search
             $location = $user['location'];
         }
 
-        $people = new Simple($id, new \execut\peopleFinder\Name\Simple($name), new \execut\peopleFinder\Friends\Odnoklassniki($id));
+        $people = new Simple($id, new \execut\peopleFinder\Name\Simple($name), new \execut\peopleFinder\Friends\Odnoklassniki($id), $age);
 
         return $people;
     }

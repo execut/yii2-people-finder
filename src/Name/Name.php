@@ -11,4 +11,10 @@ namespace execut\peopleFinder\Name;
 
 interface Name
 {
+    public function getName(): string;
+    public function getSurname(): ?string;
+    public function getSecondSurname(): ?string;
+    public function getFirstname(): string;
+    public function getSecondname(): ?string;
+    public function getSurnameAtBirth(): ?string;
 }

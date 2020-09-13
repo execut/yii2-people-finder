@@ -13,6 +13,7 @@ use execut\peopleFinder\Person\Person;
 
 interface Friends
 {
+    public function reset();
     public function next():bool;
     public function current():?Person;
     public function getTotalCount():int;
