@@ -21,7 +21,8 @@
     "yiisoft/yii2": "@dev",
     "guzzlehttp/guzzle": "^7.0",
     "modularsoftware/php-gedcom": "^1.1",
-    "ext-dom": "*"
+    "ext-dom": "*",
+    "vkcom/vk-php-sdk": "dev-master"
   },
   "require-dev": {
     "codeception/codeception": "^4.0",
