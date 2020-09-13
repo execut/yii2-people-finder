@@ -28,18 +28,17 @@ class Client
             return $result;
         }
 
-        usleep(100000);
         $result = false;
         for ($key = 0; $key < 2; $key++) {
             try {
-                $token = getenv('VK_ACCESS_TOKEN');
+                $token = $this->getTokenFromEnv();
                 if (!$token) {
                     $this->requestAccessToken();
                 }
 
                 $vk = new VKApiClient();
                 $result = $vk->$area()->$method($token, $params);
-                usleep(300000);
+                sleep(1);
                 break;
             } catch (VKApiAuthException $e) {
                 $this->requestAccessToken();
@@ -63,7 +62,15 @@ class Client
         $scope = array(VKOAuthUserScope::FRIENDS, VKOAuthUserScope::GROUPS);
         $secretKey = 'uLeeud8KcAvUE6D9B7dy';
         $browser_url = $oauth->getAuthorizeUrl(VKOAuthResponseType::TOKEN, $client_id, $redirect_uri, $display, $scope, $secretKey);
-        throw new Exception('Please, follow by url: ' . $browser_url . ' and enter token param after redirect.');
+        throw new Exception('Bad token from VK_ACCESS_TOKEN="' . $this->getTokenFromEnv() . '". Please, follow by url to get new: ' . $browser_url . ' and enter token param after redirect.');
 
+    }
+
+    /**
+     * @return array|false|string
+     */
+    protected function getTokenFromEnv()
+    {
+        return getenv('VK_ACCESS_TOKEN');
     }
 }

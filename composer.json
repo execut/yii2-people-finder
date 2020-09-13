@@ -1,7 +1,7 @@
 {
   "name": "execut/yii2-people-finder",
   "description": "Extension for search people via social networks. Now supported only ok.ru",
-  "keywords": ["yii2 ok.ru", "yii2 social networks", "yii2 people finder"],
+  "keywords": ["yii2", "ok.ru", "social networks", "vk.com", "people finder"],
   "homepage": "https://github.com/execut/yii2-people-finder",
   "type": "yii2-extension",
   "license": "Apache-2.0",
