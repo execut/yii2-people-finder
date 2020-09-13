@@ -20,7 +20,7 @@
     "php": "^7.4",
     "yiisoft/yii2": "@dev",
     "guzzlehttp/guzzle": "^7.0",
-    "modularsoftware/php-gedcom": "^1.1",
+    "execut/php-gedcom": "^1.1",
     "ext-dom": "*",
     "vkcom/vk-php-sdk": "dev-master"
   },
